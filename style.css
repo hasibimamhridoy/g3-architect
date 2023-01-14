@@ -224,8 +224,225 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
+
+
 /* End featured-love-enjoy */
 
+/* start bonus section recent work */
+.know-we-section{
+    /* height: 100vh; */
+    /* background-color: #ff8f0e7d; */
+}
+
+.know-we-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.know-we-container{
+    display: grid;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-columns: repeat(auto-fit , minmax(200px,1fr)); */
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    grid-template-areas:
+    "one two three four "
+    "five two three eight "
+    "five six seven eight ";
+    cursor: pointer;
+    
+    
+}
+
+.know-we{
+    background-color: #efe9e9ea;
+    
+    
+}
+.know-we-one{
+   grid-area: one;
+   border-radius: 20px;
+   background-color: #E2E2E2;
+   text-align: center;
+  
+}
+
+.know-we-two{
+    grid-area: two;
+    background-color: #FA5300;
+    border-radius: 10px;
+    color: var(--button-color);
+ }
+
+ .know-we-three{
+    grid-area: three;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+ }
+
+ .know-we-four{
+    grid-area: four;
+    background-color: #FA0644;
+    border-radius: 10px;
+    color: var(--button-color);
+ }
+
+ .know-we-five{
+    grid-area: five;
+    background-color: #FA0644;
+    border-radius: 10px;
+    color: var(--button-color);
+ }
+
+ .know-we-six{
+    grid-area: six;
+    border-radius: 20px;
+   background-color: #E2E2E2;
+   color: var(--nav-color);
+ }
+
+ .know-we-seven{
+    grid-area: seven;
+    background-color: #AA02FF;
+    color: var(--button-color);
+    border-radius: 20px;
+
+ }
+
+ .know-we-eight{
+    grid-area: eight;
+    background-image: url('./images/architect/architect.png');
+    background-size: cover;
+    border-radius: 20px;
+    background-blend-mode: overlay;
+    background-color: #3d3c3cd4;
+ }
+ 
+
+ .know-we-one-title{
+    /* padding: 3rem; */
+    padding-bottom: 3rem;
+    background-color: #E2E2E2;
+ }
+
+ .know-top-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    transform: translateY(-30px) translateX(100px);
+ }
+
+ .brand-logo{
+    display: flex;
+    padding: 15px;
+    justify-content: end;
+ }
+
+ .brand-title{
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    padding-left: 20px;
+ }
+
+ .events ,.news{
+    display: flex;
+    padding: 15px;
+    justify-content: end;
+ }
+
+ .events-title{
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    padding-left: 20px; 
+ }
+ .global-title{
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    padding-left: 20px;
+ }
+
+ .knowledge-title{
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    padding-left: 20px;
+    margin-right: 20px;
+ }
+
+ .human-title{
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    padding-left: 20px;
+    margin-right: 20px;
+ }
+
+ .people-directory-title{
+    color: var(--button-color);
+    font-weight: bolder;
+    font-size: 1rem;
+    
+ }
+
+ .people-directory-title .people-icon-clr{
+    color: #E2E2E2;
+    font-size: 20px;
+ }
+
+ /* Mobile Know we */
+
+ .mobile-know-we-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+ }
+.mobile-know-we{
+    background-color: #fdf8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.mobile-know-we-title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.mobile-know-we img{
+    border-radius: 10px;
+}
+.mobile-ceo-title{
+    margin-top: 15px;
+}
+
+.mobile-ceo-description{
+    margin-top: 15px;
+}
+
+.mobile-ceo-btn{
+    margin-top: 15px;
+}
+.mobile-ceo-btn button{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+/* End bonus section recent work */
 
 /* Bonus Css */
 .win:hover {
@@ -425,6 +642,14 @@ h3 {
     }
     /*End Love and enloy Section */
 
+    /* Main Know we bonus section */
+    .know-we-container ,.know-we-title{
+    display: none;
+ }
+
+
+
+
     /* Facts Section */
     .facts-title-containar {
     width: 100%;
@@ -448,7 +673,7 @@ h3 {
 .sponsoed-logo-container img {
     width: 30%;
 }
-/* Sponsored Section */
+/* Sponsored Section  */
 }
 
 /* Tablet and laptop Device */
@@ -462,13 +687,29 @@ h3 {
     .features-love-enjoy-title-container {
         width: 100%;
     }
+
+    .know-we-section , .know-we-title{
+        display: none;
+    }
+    
+
+    .mobile-know-we-section {
+        display: block;
+    }
 }
 
 @media only screen and (min-width:577px) and (max-width:2267px) {
-    .expriecne-mobile-special-btn {
+    .expriecne-mobile-special-btn{
         display: none;
     }
 }
+
+@media only screen and (min-width:1000px) and (max-width:2267px) {
+    .mobile-know-we-section{
+        display: none;
+    }
+}
+ 
 /* Tablet and laptop Device */
 /* Reponsive End */
 /* Bonus End */
